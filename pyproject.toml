@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-cad-bridge"
+version = "0.1.0"
+description = "CADBridge: shared CAD automation core and Codex CAD plugin"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "mcp>=1.24,<2",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2,<3",
+  "pywin32>=300; sys_platform == 'win32'",
+  "openpyxl>=3.1,<4",
+  "pillow>=10",
+  "ezdxf>=1.4,<2",
+  "matplotlib>=3.9,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[project.scripts]
+cadbridge = "cadbridge.__main__:main"
+
+[tool.setuptools]
+packages = ["cadbridge", "cadbridge.backends"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

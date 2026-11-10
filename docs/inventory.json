@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "mcp_tool_count": 8,
+  "mcp_tools": [
+    "cad_connect",
+    "cad_capabilities",
+    "cad_catalog",
+    "cad_documents",
+    "cad_execute",
+    "cad_batch",
+    "cad_preview",
+    "cad_request_status"
+  ],
+  "business_operation_count": 56,
+  "business_operations": {
+    "drawing": [
+      "draw_line",
+      "draw_circle",
+      "draw_arc",
+      "draw_rectangle",
+      "draw_polyline",
+      "draw_ellipse",
+      "draw_text",
+      "draw_hatch",
+      "add_dimension",
+      "draw_spline",
+      "draw_leader",
+      "draw_mleader",
+      "draw_table"
+    ],
+    "entities": [
+      "get_entity_properties",
+      "set_entity_properties",
+      "delete_entity",
+      "move_entities",
+      "rotate_entities",
+      "scale_entities",
+      "change_entity_color",
+      "change_entity_layer",
+      "create_rectangular_array",
+      "create_polar_array",
+      "create_path_array"
+    ],
+    "layers": [
+      "create_layer",
+      "set_current_layer",
+      "get_current_layer",
+      "list_layers",
+      "get_layers_info",
+      "rename_layer",
+      "delete_layer",
+      "turn_layer_on",
+      "turn_layer_off",
+      "is_layer_on",
+      "set_layer_color",
+      "set_entities_color_bylayer"
+    ],
+    "blocks": [
+      "create_block_from_entities",
+      "insert_block",
+      "list_blocks",
+      "get_block_counts",
+      "get_block_info",
+      "get_block_references",
+      "get_block_attributes",
+      "set_block_attributes"
+    ],
+    "query": [
+      "select_by_color",
+      "select_by_layer",
+      "select_by_type",
+      "get_entity_counts",
+      "extract_drawing_data",
+      "export_to_excel",
+      "query_entities"
+    ],
+    "view": [
+      "zoom_extents",
+      "refresh_view",
+      "undo",
+      "redo",
+      "set_text_style"
+    ]
+  },
+  "document_action_count": 7,
+  "document_actions": [
+    "list",
+    "new",
+    "open",
+    "activate",
+    "inspect",
+    "save",
+    "close"
+  ],
+  "skill_count": 4,
+  "skills": [
+    "cad-connect",
+    "cad-develop",
+    "cad-draw",
+    "cad-inspect"
+  ],
+  "counting_note": "MCP entrypoints, catalog operations and document actions are separate layers; do not add them into a feature count."
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cad_bridge": {
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${CLAUDE_PLUGIN_ROOT}/scripts/start_mcp.ps1"]
+    }
+  }
+}

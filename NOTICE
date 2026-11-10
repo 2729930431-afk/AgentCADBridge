@@ -1,0 +1,15 @@
+CADBridge / AgentCADBridge
+Copyright 2026 CADBridge contributors
+
+This product includes an unmodified source snapshot of multiCAD-mcp:
+  https://github.com/AnCode666/multiCAD-mcp
+  commit d724ee4cbc49dffc0f51f61608d02dbc5e1ed3a8
+  Authors listed by upstream: AnCode666, SVF-GFA, JardiMargalefAgusti
+  License: Apache License 2.0 (vendor/multicad/LICENSE)
+
+The vendored source is retained under vendor/multicad. CADBridge's new
+shared scheduling, document-bound facade, validation, MCP host adaptation,
+preview pipeline, installation workflow and Skills live outside that snapshot.
+
+Python dependencies retain their respective licenses. CAD applications and
+their vendor SDKs are not distributed by this repository.

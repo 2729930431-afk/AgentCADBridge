@@ -1,0 +1,23 @@
+{
+  "name": "cad",
+  "version": "0.1.0",
+  "description": "CADBridge：通过共享 COM 业务核心控制中望 CAD，保留多 CAD 后端结构。",
+  "author": {"name": "2729930431-afk"},
+  "repository": "https://github.com/2729930431-afk/AgentCADBridge",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "CAD",
+    "shortDescription": "连接、查询、绘制和编辑中望 CAD 图纸。",
+    "longDescription": "CADBridge 第一版 Codex 适配。共享 MCP、文档绑定、参数校验、批处理、执行记录与多 CAD COM 配置；以中望 CAD 2026 为实机验收环境。",
+    "developerName": "2729930431-afk",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write", "Local workflow"],
+    "defaultPrompt": ["连接已打开的中望 CAD，检查当前图纸。", "新建一张图纸，绘制建筑平面草图。"],
+    "brandColor": "#137C91",
+    "composerIcon": "./assets/cad.svg",
+    "logo": "./assets/cad.svg"
+  }
+}

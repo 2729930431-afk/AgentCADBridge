@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "cad": "ZWCAD 2026 Education",
+  "checks": [
+    "MCP stdio initialize/connect/new document",
+    "operation schema discovery",
+    "entity creation/readback/idempotent replay",
+    "move and coordinate verification",
+    "property edit/readback",
+    "undo/redo with observed property changes",
+    "document switch cannot redirect a write",
+    "batch validation prevents partial writes on invalid inputs",
+    "layers/circle/ellipse/hatch/dimension/table",
+    "block definition/insertion and rectangular array/rotate/scale",
+    "polar array without item rotation and path array with nonzero base",
+    "Excel export to a new file",
+    "save/close/reopen nonempty DWG"
+  ],
+  "date": "2026-11-10",
+  "automated_tests_passed": 23,
+  "lint": "passed",
+  "inventory": {
+    "mcp_tools": 8,
+    "catalog_operations": 56,
+    "document_actions": 7,
+    "skills": 4
+  },
+  "preview": {
+    "transport": "MCP stdio",
+    "png": [
+      1600,
+      1200
+    ],
+    "source_entities": 206,
+    "computer_control": false,
+    "nonactive_document_export": "verified"
+  },
+  "other_cad_profiles": "configuration retained; not live-validated"
+}

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Virtual environment
+.venv/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage_report.txt
+
+# Test artifacts
+test_*.py
+test_*.png
+test_*.txt
+verify_*.py
+debug_*.py
+dxf_dump.txt
+
+# Logging
+logs/multicad_mcp.log
+
+
+# Local configuration
+config.local.json
+.env
+
+# OS
+Thumbs.db
+.DS_Store
+
+# legacy
+_archive
+
+# MkDocs generated site
+site/
+
+
+.ruff_cache
+
+z_examples
+z_experiments
